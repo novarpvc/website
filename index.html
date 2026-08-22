@@ -213,10 +213,11 @@
 
   /* ---------- Footer ---------- */
   footer{border-top:1px solid var(--border); margin-top:100px; padding:40px 24px;}
-  .footer-inner{max-width:1180px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap;}
+  .footer-inner{max-width:1180px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; gap:20px 28px; flex-wrap:wrap;}
   .footer-brand{display:flex; align-items:center; gap:10px; font-family:var(--font-display); font-weight:700;}
   .footer-brand img{height:26px;}
-  .footer-links{display:flex; gap:22px; font-size:0.9rem; color:var(--text-dim);}
+  .footer-links{display:flex; gap:12px 22px; font-size:0.9rem; color:var(--text-dim); flex-wrap:wrap;}
+  .footer-links a{color:inherit; text-decoration:none;}
   .footer-links a:hover{color:#fff;}
   .footer-meta{color:var(--text-faint); font-size:0.8rem; font-family:var(--font-mono);}
 
@@ -275,6 +276,29 @@
     }
     nav.main-nav.mobile-open button.nav-link{text-align:left; width:100%;}
   }
+
+
+  /* ---------- Legal Pages ---------- */
+  .legal-view{max-width:980px; margin:0 auto; padding:70px 24px 20px;}
+  .legal-header{margin-bottom:30px;}
+  .legal-header h1{margin:.35rem 0 .8rem; font-size:clamp(2rem,4vw,3.3rem);}
+  .legal-header p{max-width:760px; color:var(--text-dim); line-height:1.75;}
+  .legal-grid{display:grid; gap:16px;}
+  .legal-card{background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.018)); border:1px solid var(--border); border-radius:20px; padding:24px; box-shadow:0 20px 60px -45px rgba(139,63,250,.45);}
+  .legal-card h2{font-family:var(--font-display); font-size:1.1rem; margin:0 0 10px; color:#fff;}
+  .legal-card h3{font-family:var(--font-display); font-size:.98rem; margin:18px 0 8px; color:#fff;}
+  .legal-card p,.legal-card li{color:var(--text-dim); line-height:1.75; font-size:.94rem;}
+  .legal-card p{margin:0 0 10px;}
+  .legal-card p:last-child{margin-bottom:0;}
+  .legal-card ul{margin:8px 0 0 18px; padding:0;}
+  .legal-note{padding:14px 16px; border-radius:14px; background:rgba(139,63,250,.08); border:1px solid rgba(139,63,250,.2); color:#d8ccf0; font-size:.88rem; line-height:1.65;}
+  .legal-back{display:inline-flex; align-items:center; gap:8px; margin-top:26px; padding:11px 15px; border:1px solid var(--border); border-radius:12px; color:#fff; background:rgba(255,255,255,.035); cursor:pointer; font:inherit;}
+  .legal-back:hover{border-color:rgba(255,255,255,.22); background:rgba(255,255,255,.06);}
+  .footer-legal{display:flex; gap:12px 18px; align-items:center; flex-wrap:wrap; font-size:.85rem;}
+  .footer-legal button{padding:0; border:0; background:none; color:var(--text-dim); font:inherit; cursor:pointer;}
+  .footer-legal button:hover{color:#fff;}
+  @media (max-width:700px){.legal-view{padding:52px 18px 10px}.legal-card{padding:20px}.footer-inner{align-items:flex-start}.footer-links,.footer-legal{width:100%;}}
+
 </style>
 </head>
 <body>
@@ -498,6 +522,139 @@
     <div class="no-results" id="discordNoResults">Keine Paragraphen gefunden.</div>
   </section>
 
+
+
+  <!-- ============ DATENSCHUTZ ============ -->
+  <section class="view" id="view-datenschutz">
+    <div class="legal-view">
+      <div class="legal-header">
+        <div class="kicker">Rechtliches</div>
+        <h1>Datenschutzerklärung</h1>
+        <p>Hier erfährst du, welche personenbezogenen Daten beim Besuch und bei der Nutzung dieser Website verarbeitet werden können.</p>
+      </div>
+
+      <div class="legal-grid">
+        <div class="legal-card">
+          <h2>1. Kontakt</h2>
+          <p>Bei Fragen zum Datenschutz oder zur Verarbeitung personenbezogener Daten kannst du uns unter folgender E-Mail-Adresse erreichen:</p>
+          <p>E-Mail: <a href="mailto:kontakt.novarp@gmail.com">kontakt.novarp@gmail.com</a></p>
+          <p class="legal-note">Diese Datenschutzerklärung bezieht sich auf die hier bereitgestellte Website. Für externe Plattformen wie Discord oder Roblox gelten deren jeweils eigenen Datenschutzbestimmungen.</p>
+        </div>
+
+        <div class="legal-card">
+          <h2>2. Aufruf der Website</h2>
+          <p>Beim Aufruf einer Website werden technisch erforderliche Informationen zwischen deinem Endgerät und dem Hosting- bzw. Webserver ausgetauscht. Dabei können insbesondere IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Dateien, Referrer-URL sowie Informationen zu Browser, Betriebssystem und Gerät verarbeitet werden.</p>
+          <p>Die Verarbeitung dient der technischen Bereitstellung, Stabilität und Sicherheit der Website. Die konkrete Speicherdauer dieser Server- bzw. Zugriffsprotokolle hängt vom tatsächlich eingesetzten Hosting-Anbieter und dessen Konfiguration ab.</p>
+        </div>
+
+        <div class="legal-card">
+          <h2>3. Kontakt per E-Mail</h2>
+          <p>Wenn du uns per E-Mail kontaktierst, verarbeiten wir die von dir übermittelten Angaben, insbesondere E-Mail-Adresse, Name und den Inhalt deiner Nachricht, soweit dies für die Bearbeitung deines Anliegens erforderlich ist.</p>
+          <p>Eine darüber hinausgehende Nutzung erfolgt nur, soweit hierfür eine gesetzliche Grundlage besteht oder du ausdrücklich eingewilligt hast.</p>
+        </div>
+
+        <div class="legal-card">
+          <h2>4. Google Fonts</h2>
+          <p>Diese Website verwendet aktuell Schriftarten über <strong>Google Fonts</strong>. Die Schriftdateien bzw. das Stylesheet werden von Google-Servern angefordert. Dadurch kann insbesondere die IP-Adresse deines Endgeräts an Google übermittelt werden.</p>
+          <p>Google weist selbst darauf hin, dass bei der Nutzung seiner Dienste unter anderem IP-Adresse, Browser- und Geräteinformationen sowie Datum, Uhrzeit und Referrer-URL verarbeitet werden können.</p>
+          <p>Die Rechtsgrundlage der Einbindung ist anhand der konkreten technischen und rechtlichen Konfiguration des Webangebots zu bestimmen. Eine datenschutzfreundlichere Alternative ist die lokale Einbindung der verwendeten Schriftarten.</p>
+        </div>
+
+        <div class="legal-card">
+          <h2>5. Externe Links zu Discord</h2>
+          <p>Auf der Website befinden sich Links zu Discord, unter anderem zu Community- und Fraktionsservern. Beim Anklicken eines solchen Links verlässt du unsere Website und wechselst zu einem externen Anbieter.</p>
+          <p>Ab diesem Zeitpunkt gelten die Datenschutzbestimmungen von Discord. Auf die dort stattfindenden Datenverarbeitungen hat Nova RP/VC keinen Einfluss.</p>
+        </div>
+
+        <div class="legal-card">
+          <h2>6. Cookies &amp; Tracking</h2>
+          <p>Nach dem derzeitigen technischen Stand dieser Website werden von der eigenen Website keine Analyse- oder Werbedienste wie Google Analytics eingesetzt und es ist kein eigenes Tracking-System vorgesehen.</p>
+          <p>Ob dein Hosting-Anbieter technisch erforderliche Cookies oder Servermechanismen verwendet, hängt von dessen konkreter Konfiguration ab und sollte anhand der Hosting-Einstellungen geprüft werden.</p>
+        </div>
+
+        <div class="legal-card">
+          <h2>7. Welche Rechte hast du?</h2>
+          <p>Du hast nach den gesetzlichen Voraussetzungen insbesondere das Recht auf Auskunft über deine gespeicherten personenbezogenen Daten, Berichtigung unrichtiger Daten, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch gegen bestimmte Verarbeitungen. Soweit eine Verarbeitung auf einer Einwilligung beruht, kannst du diese mit Wirkung für die Zukunft widerrufen.</p>
+          <p>Zur Ausübung deiner Rechte genügt eine Nachricht an <a href="mailto:kontakt.novarp@gmail.com">kontakt.novarp@gmail.com</a>. Die Rechte und Informationspflichten ergeben sich insbesondere aus Art. 12–22 DSGVO.</p>
+        </div>
+
+        <div class="legal-card">
+          <h2>8. Beschwerderecht</h2>
+          <p>Du hast das Recht, dich bei einer Datenschutzaufsichtsbehörde zu beschweren, wenn du der Ansicht bist, dass die Verarbeitung deiner personenbezogenen Daten gegen Datenschutzrecht verstößt.</p>
+        </div>
+
+        <div class="legal-card">
+          <h2>9. Aktualisierung dieser Datenschutzerklärung</h2>
+          <p>Diese Datenschutzerklärung wird angepasst, wenn sich die technische Umsetzung der Website, die eingesetzten Dienste oder die rechtlichen Anforderungen ändern.</p>
+          <p><strong>Stand: 22. August 2026</strong></p>
+          <p class="legal-note">Die Erklärung ist auf Grundlage des aktuell erkennbaren Codes dieser Website erstellt. Insbesondere die konkrete Hosting-Plattform und deren Server-Log-Aufbewahrung sind nicht aus der HTML-Datei ersichtlich und müssen mit den tatsächlichen Einstellungen des Hosters übereinstimmen. Art. 13 DSGVO verlangt unter anderem Informationen über Verantwortlichen, Zwecke, Rechtsgrundlagen, Empfänger und weitere Umstände der Verarbeitung.</p>
+        </div>
+      </div>
+      <button class="legal-back" data-view="home">← Zur Startseite</button>
+    </div>
+  </section>
+
+  <!-- ============ NUTZUNGSBEDINGUNGEN ============ -->
+  <section class="view" id="view-nutzungsbedingungen">
+    <div class="legal-view">
+      <div class="legal-header">
+        <div class="kicker">Rechtliches</div>
+        <h1>Nutzungsbedingungen</h1>
+        <p>Grundlegende Bedingungen für die Nutzung der Nova RP/VC Website und der zugehörigen Community-Angebote.</p>
+      </div>
+
+      <div class="legal-grid">
+        <div class="legal-card">
+          <h2>§1 Geltungsbereich</h2>
+          <p>Diese Nutzungsbedingungen gelten für die Nutzung der öffentlich erreichbaren Website von Nova RP/VC sowie für die über die Website verlinkten Community-Angebote, soweit dort keine eigenen Bedingungen gelten.</p>
+        </div>
+
+        <div class="legal-card">
+          <h2>§2 Zweck der Website</h2>
+          <p>Die Website dient der Information über Nova RP/VC, die Community, das Roleplay-Angebot und die dazugehörigen Regelwerke. Inhalte können jederzeit aktualisiert, ergänzt, geändert oder entfernt werden.</p>
+        </div>
+
+        <div class="legal-card">
+          <h2>§3 Regelwerke</h2>
+          <p>Für die Nutzung des Roleplay-Angebots und des Discord-Servers gelten zusätzlich die jeweils veröffentlichten Ingame- und Discord-Regeln. Bei einem Widerspruch sind die für den jeweiligen Dienst ausdrücklich geltenden Regeln maßgeblich.</p>
+        </div>
+
+        <div class="legal-card">
+          <h2>§4 Verbotene Nutzung</h2>
+          <p>Die Website darf nicht missbräuchlich genutzt werden. Insbesondere sind Angriffe auf die technische Infrastruktur, automatisierte Störungen, die Verbreitung schädlicher Inhalte sowie Rechtsverletzungen untersagt.</p>
+        </div>
+
+        <div class="legal-card">
+          <h2>§5 Inhalte &amp; Urheberrecht</h2>
+          <p>Texte, Grafiken, Logos, Designs und sonstige Inhalte dieser Website sind grundsätzlich geschützt. Eine Nutzung außerhalb der gesetzlichen Schranken des Urheberrechts bedarf der vorherigen Zustimmung des jeweiligen Rechteinhabers.</p>
+          <p>Das Nova-RP/VC-Logo und projektbezogene Kennzeichen dürfen nicht ohne entsprechende Erlaubnis als eigene Marken oder Kennzeichen verwendet werden.</p>
+        </div>
+
+        <div class="legal-card">
+          <h2>§6 Externe Dienste</h2>
+          <p>Für externe Plattformen wie Discord oder Roblox gelten deren eigene Nutzungsbedingungen, Richtlinien und Datenschutzbestimmungen. Nova RP/VC hat keinen Einfluss auf die Verfügbarkeit oder technische Ausgestaltung dieser externen Dienste.</p>
+        </div>
+
+        <div class="legal-card">
+          <h2>§7 Änderungen &amp; Verfügbarkeit</h2>
+          <p>Nova RP/VC kann Inhalte und Funktionen der Website jederzeit ändern oder vorübergehend nicht verfügbar machen. Ein Anspruch auf eine dauerhaft unveränderte oder ununterbrochene Verfügbarkeit besteht nicht.</p>
+        </div>
+
+        <div class="legal-card">
+          <h2>§8 Haftung</h2>
+          <p>Für die Inhalte und deren Aktualität wird nach Maßgabe der gesetzlichen Vorschriften Verantwortung übernommen. Eine Haftungsbeschränkung gilt nur, soweit sie gesetzlich zulässig ist.</p>
+        </div>
+
+        <div class="legal-card">
+          <h2>§9 Schlussbestimmungen</h2>
+          <p>Sollten einzelne Bestimmungen unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt, soweit gesetzlich zulässig. Zwingende gesetzliche Verbraucherrechte bleiben unberührt.</p>
+          <p><strong>Stand: 22. August 2026</strong></p>
+        </div>
+      </div>
+      <button class="legal-back" data-view="home">← Zur Startseite</button>
+    </div>
+  </section>
+
 </main>
 
 <footer>
@@ -508,6 +665,10 @@
       <button class="nav-link-footer" data-view-link="ingame" style="background:none;border:none;color:inherit;font:inherit;cursor:pointer;">Ingame-Regelwerk</button>
       <button class="nav-link-footer" data-view-link="discord" style="background:none;border:none;color:inherit;font:inherit;cursor:pointer;">Discord-Regelwerk</button>
       <a href="https://discord.gg/nvrp" target="_blank" rel="noopener">Discord</a>
+    </div>
+    <div class="footer-legal">
+      <button data-view-link="datenschutz">Datenschutz</button>
+      <button data-view-link="nutzungsbedingungen">Nutzungsbedingungen</button>
     </div>
     <div class="footer-meta">© 2026 Nova RP/VC</div>
   </div>
@@ -707,7 +868,8 @@ document.getElementById("hamburgerBtn").addEventListener("click", () => {
 });
 
 const initial = (location.hash || "#home").replace("#","");
-showView(["home","ingame","discord"].includes(initial) ? initial : "home");
+const allowedViews = ["home","ingame","discord","datenschutz","nutzungsbedingungen"];
+showView(allowedViews.includes(initial) ? initial : "home");
 </script>
 
 </body>
